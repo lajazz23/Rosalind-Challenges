@@ -1,3 +1,7 @@
+# Given: Two positive integers a and b (a<b<10000).
+# Return: The sum of all odd integers from a through b, inclusively.
+
+# the code for the above prompt can be found below. This section was mainly me following the Rosalind tutorials.
 a = 42
 if a < 10:
   print 'the number is less than 10'
@@ -25,21 +29,21 @@ for i in range(n):
 
 print range(5, 12)
 
-
+# the code for the actual problem is below:
 a = 4393
 b = 9264
-bruh = a
+placeholder = a
 some = 0
-poo = 0
+p = 0
 for i in range(a, b+1):
-    if bruh % 2 != 0:
-       some += bruh # some = some + bruh
-       bruh += 1
+    if placeholder % 2 != 0:
+       some += placeholder # some = some + placeholder
+       placeholder += 1
     else:
-        poo += 1
-        print 'poopoo' + ' ' + str(poo)
-        bruh += 1
+        p += 1
+        # print 'p' + ' ' + str(p)  # this is to make sure that the code is iterating through the loop
+        placeholder += 1
 print some
-       
+         
             
     
